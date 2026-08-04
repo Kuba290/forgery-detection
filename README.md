@@ -16,6 +16,8 @@
 
 It saves the image at a specified JPEG quality (default 90%) and then calculates the difference between the original and the compressed version to detect areas with different compression levels. If a fragment of the image was pasted from another file, it will have a different noise structure than the rest of the image. Max Pooling is used to summarize these differences and derive statistics: mean and standard deviation.
 
+<img width="389" height="411" alt="obraz" src="https://github.com/user-attachments/assets/fc0d249a-4b45-4a3f-b583-69e521be3032" />
+
 ## Image Features Function
 
 Combines the results of several methods:
@@ -28,19 +30,22 @@ Combines the results of several methods:
 
 Displays the image side-by-side, a black-and-white mask indicating the manipulation, and applies the mask to the image (as a red area).
 
+<img width="1183" height="483" alt="obraz" src="https://github.com/user-attachments/assets/4a05931c-187b-49dd-8009-688a109f7e8a" />
+<img width="562" height="404" alt="obraz" src="https://github.com/user-attachments/assets/82a39454-9048-4ae9-b837-c36e21236578" />
+
 ## Confusion Table Function
 
 Represents the performance of the classification algorithm (classifier). Each row of the table represents the possible actual labels of the units being tested, and each column represents the labels predicted by the algorithm.
 
-## Image Resolution Histogram Function
-
-The image collection is analyzed for image height and width.
+<img width="1784" height="484" alt="obraz" src="https://github.com/user-attachments/assets/080a3c0e-c2e5-4b43-9991-89dc323cdaa9" />
 
 ## Image Resolution Histograms in CASIA2
 
 The histograms feature bars grouping similar values, and a kernel density estimator (KDE), a type of nonparametric estimator designed to determine the density distribution of a random variable based on the obtained sample. It determines the values ​​of the variable under study during previous measurements.
 
 The conclusion from this study is that the images have different resolutions, and the distribution is divergent between authentic and faked images, which requires rescaling the entire set.
+
+<img width="1384" height="584" alt="obraz" src="https://github.com/user-attachments/assets/d1f5a0d7-2f1c-40f5-8d01-946895f463a9" />
 
 ## Main for CASIA2
 
@@ -98,6 +103,41 @@ Based on the assumption that similar objects are typically located close to each
 
 7. Finally, the algorithm evaluates the Random Forest based on why it made a given decision. SHAP displays all features from most important to least important. For example, a dot shifted to the right for a given feature indicates that its high value strongly biased the result toward classifying the image as fake. Due to its computational complexity, this classifier was chosen over SHAP.
 
+<img width="567" height="440" alt="obraz" src="https://github.com/user-attachments/assets/09ed2b66-8726-4e69-a766-972c82d8bc2a" />
+<img width="701" height="533" alt="obraz" src="https://github.com/user-attachments/assets/04229511-712a-47c7-802d-41acf3d335bf" />
+
 ## SHAP
 
 Shapley Additive exPlanations is a method for explaining model results that allows us to visualize which features play a key role in classification. It is based on game theory (Shapley values), treating each image feature as a player in a team working towards a final result.
+
+<img width="756" height="614" alt="obraz" src="https://github.com/user-attachments/assets/69087b77-492d-4fe8-b2c5-055121ceb37c" />
+
+## Main for CoMoFod
+
+### Visualisation
+<img width="1009" height="509" alt="obraz" src="https://github.com/user-attachments/assets/d3a0e65d-4520-45e8-91e5-638868e805e3" />
+<img width="425" height="428" alt="obraz" src="https://github.com/user-attachments/assets/bbb516d6-2612-4ff5-a38b-e68f0a1d28cd" />
+<img width="1010" height="509" alt="obraz" src="https://github.com/user-attachments/assets/d4c20b84-5887-4547-978c-af90924af499" />
+
+### Error Level Analysis
+<img width="389" height="411" alt="obraz" src="https://github.com/user-attachments/assets/3fe8ffad-b651-4962-91bb-8bc720b7aa38" />
+
+### Class image count
+<img width="552" height="435" alt="obraz" src="https://github.com/user-attachments/assets/527a31ab-ca08-4a58-be99-bf29ccc0fff4" />
+
+### Accuracy
+<img width="691" height="528" alt="obraz" src="https://github.com/user-attachments/assets/2acf5550-cc1b-447e-98ad-d5b2d91a78e9" />
+
+### Confusion matrices
+<img width="1790" height="490" alt="obraz" src="https://github.com/user-attachments/assets/27cd041d-523f-4dbc-9a5f-8a7d827522f5" />
+
+### SHAP
+<img width="765" height="940" alt="obraz" src="https://github.com/user-attachments/assets/889c1df6-e999-430c-b370-0f69980a8050" />
+
+
+
+
+
+
+
+
