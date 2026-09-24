@@ -134,6 +134,9 @@ Shapley Additive exPlanations is a method for explaining model results that allo
 ### SHAP
 <img width="765" height="940" alt="obraz" src="https://github.com/user-attachments/assets/889c1df6-e999-430c-b370-0f69980a8050" />
 
+## Contributors
+* [@Kuba290](https://github.com/Kuba290)
+* [@LikeCiastka](https://github.com/LikeCiastka)
 
 
 
